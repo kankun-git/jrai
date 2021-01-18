@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <title>list</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="bar color-content sizing" id="navbar">
+        <a href="#" onclick="openSideBar()"><img id="menu" class="img-resize" src="../icon/menu.png" alt="menu"></a>
+        <a><h2 class="headerFont">Hướng dẫn</h2></a>
+    </div>
+    <div id="sideBar" class="box">
+        <div class="color-content sizing">
+            <a href="#" onclick='closeSideBar()' class="close-button"><img src="../icon/arrow.png" alt="back"></a>
+        </div>
+        <br>
+        <li><a href="index.html">Trang chính</a></li>
+        <br>
+        <li><a href="baihoc.html">Bài học</a></li>
+        <br>
+        <li><a href="tudien.html">Từ điển</a></li>
+        <br>
+        <li><a href="vanhoa.html">Văn hóa</a></li>
+        <br>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+    </div>
+
+    <div class="expressbox">
+        <h4>Bài học:</h4>
+        <li>- có thể chạm vào các ô chứa tiêu đề của bài để xem chi tiết của bài học đó!</li>
+        <br>
+        <li>- có thể sử dụng thanh tìm kiếm để tìm kiếm bài mà mình muốn xem.</li>
+        <h4>Từ điển:</h4>
+        <li>- sử dụng thanh tra từ để tìm từ và kết quả sẽ được tự động hiện ra, lúc này chỉ cần chạm vào từ là kết quả mà mình muốn tra để xem rõ về từ đó hơn!</li>
+        <br>
+        <li>- chạm vào ô màu cam bên cạnh thanh tìm kiếm để chuyển đổi ngôn ngữ.</li>
+        <br>
+        <li>- chạm vào biểu tượng loa để nghe cách phát âm của từ mình muốn tìm hiểu.</li>
+        <br>
+        <li>- còn nhiều từ chưa được cập nhập âm thanh nên việc không nghe được gì sẽ xảy ra!</li>
+        <br>
+        <li>- còn nhiều từ chưa được cập nhập ví dụ, nên việc phần ví dụ trở thành N/A sẽ xảy ra!</li>
+        <br>
+    </div>
+    <br>
+
+    <script>
+        function openSideBar() {
+            document.getElementById('sideBar').style.width = '60%';
+            document.getElementById('navbar').classList.toggle('overlayShadow');
+        }
+        function closeSideBar() {
+            document.getElementById('sideBar').style.width = '0px';
+        }
+    </script>
+</body>
+</html>

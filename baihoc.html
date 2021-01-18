@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <title>list</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div class="bar color-content sizing" id="navbar">
+        <a href="#" onclick="openSideBar()"><img id="menu" class="img-resize" src="../icon/menu.png" alt="menu"></a>
+        <a><input type="text" class="font custom-input" placeholder="tìm kiếm..."></a>
+        <a href="#"><img id="search" class="img-resize" src="../icon/search.png" alt="search"></a>
+    </div>
+    <div id="sideBar" class="box">
+        <div class="color-content sizing">
+            <a href="#" onclick='closeSideBar()' class="close-button"><img src="../icon/arrow.png" alt="back"></a>
+        </div>
+        <br>
+        <li><a href="index.html">Trang chính</a></li>
+        <br>
+        <li><a href="tudien.html">Từ điển</a></li>
+        <br>
+        <li><a href="vanhoa.html">Văn hóa</a></li>
+        <br>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <br>
+        <li><a href="huongdan.html">Hướng dẫn</a></li>
+    </div>
+
+    #
+
+    <script>
+        function openSideBar() {
+            document.getElementById('sideBar').style.width = '60%';
+            document.getElementById('navbar').classList.toggle('overlayShadow');
+        }
+        function closeSideBar() {
+            document.getElementById('sideBar').style.width = '0px';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <title>Từ điển</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.min.js"></script>
+</head>
+<body>
+    <div class="bar color-content sizing" id="navbar">
+        <a href="#" onclick="openSideBar()"><img id="menu" class="img-resize" src="../icon/menu.png" alt="menu"></a>
+        <a><h2 class="headerFont">Từ Điển</h2></a>
+    </div>
+    
+    <div id="sideBar" class="box">
+        <div class="color-content sizing">
+            <a href="#" onclick='closeSideBar()' class="close-button"><img src="../icon/arrow.png" alt="back"></a>
+        </div>
+        <li><a href="index.html">Trang chính</a></li>
+        <br>
+        <li><a href="baihoc.html">Bài học</a></li>
+        <br>
+        <li><a href="vanhoa.html">Văn hóa</a></li>
+        <br>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <br>
+        <li><a href="huongdan.html">Hướng dẫn</a></li>
+    </div>
+    
+    <audio id="pronounce" src="#" type="audio/wav"></audio>
+
+    <div class="searchparent">
+        <input type="text" id="search" class="inputbox" placeholder="Tra từ...">
+        <div id="language" class="changelang" onclick="langchange()">
+            <h4 class="headerFont">Jr</h4>
+        </div>
+        <div id="result"></div>
+        <div id="express"></div>
+    </div>
+
+    <script>
+        function openSideBar() {
+            document.getElementById('sideBar').style.width = '60%';
+            document.getElementById('navbar').classList.toggle('overlayShadow');
+        }
+        function closeSideBar() {
+            document.getElementById('sideBar').style.width = '0px';
+        }
+    </script>
+    <script type="text/javascript" src="../js/tudien.js"></script>
+</body>
+</html>
